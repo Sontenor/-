@@ -736,12 +736,68 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	position: relative;
 	width: 920px;
 	height: 480px;
+	vertical-align: bottom;
+	float: left;
 }
 
 #scheme {
 	display: inline-block;
-	background: url("../img/metro_map.png");
 	width: 320px;
+	background: url(../img/metro_2016.jpg)no-repeat;
+	position: relative;
+	float: left;
+}
+
+#scheme > .wrapper {
+	position: relative;
+	max-width: 920px;
+	height: 480px;
+	overflow: hidden;
+}
+
+#overlay .text {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 35%;
+	text-align: center;
+	opacity: 1;
+	z-index: 3;
+}
+
+#overlay {
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	padding-left: 5px;
+	color: #fff;
+	font-size: 18px;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.table-ceil text img {
+	
+}
+
+.overlay-bg {
+	background-color: #000;
+	opacity: .5;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.scheme-map {
+	position: relative;
+	z-index: 2;
 }
 
 .ymaps-2-1-76-balloon__close+.ymaps-2-1-76-balloon__content {
