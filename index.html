@@ -4,13 +4,17 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-desktop.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="fonts/fonts-style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" 
+	integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/semantic/semantic.min.js">
+	<link rel="stylesheet" href="css/semantic/semantic.min.css">
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=2286e038-0e27-4b8d-9363-5e23e169cb28&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
@@ -161,47 +165,407 @@
 	</section>
 <!-- foto-books section end-->
 
-<!-- section map -->
-
-<section class="section__map">
+<div class="news__text">
 	<div class="container">
-		<h1>Сеть копировальных центров Реглет в Москве</h1>
-		<div class="w__map">
-			<div id="map">
-				<div id="overlay-map">
-					<!-- <div class="text">
-						<img src="" alt="">
-						<p>показать на карте</p>
-					</div> -->
-				</div>
-			
-		</div>
+		<p><span>Отличная новость!</span> Скоро открытие нового копировального центра у метро Китай-Город.</p>
+	</div>
+</div>
 
-		<div id="scheme">
-			<div class="wrapper">
-				<div id="overlay" class="table-base">
-					<div class="table-ceil text">
-						<img src="img/icon/metro_icon.png" alt="metro">
-						<p>Показать на схеме метро</p>
+<!-- packages-section -->
+<section class="packages-section">
+	<div class="container">
+		<div class="packages__block">
+
+			<div class="packages__banner">
+				<div class="banner__overlay"></div>
+				<img src="img/packages_banner_img.jpg" alt="img">
+					<div class="banner__info">
+						<p class="banner__text-1">Твердый переплет</p>
+						<p class="banner__text-2">Закажи прямо сейчас <span>ОНЛАЙН!</span></p>
+						<a class="button" href="#">Заказать</a>
 					</div>
-					<div class="overlay-bg"></div>
+			</div>
+
+			<div class="packages__slider">
+
+				<div class="slider__item">
+					<img src="img/packages_slider_img-1.jpg" alt="img">
+					<p class="title">Econom</p>
+					<p>Цена: <span>от 180 руб.</span></p>
+					<a class="button" href="#">Заказать</a>
 				</div>
-				<div class="scheme-map-wrapper">
-					<div class="scheme-map"></div>
+
+				<div class="slider__item">
+					<img src="img/packages_slider_img-2.jpg" alt="img">
+					<p class="title">Standart</p>
+					<p>Цена: <span>от 180 руб.</span></p>
+					<a class="button" href="#">Заказать</a>
 				</div>
+
+				<div class="slider__item">
+					<img src="img/packages_slider_img-3.jpg" alt="img">
+					<p class="title">Premium</p>
+					<p>Цена: <span>от 180 руб.</span></p>
+					<a class="button" href="#">Заказать</a>
+				</div>
+
+				<div class="slider__item">
+					<img src="img/packages_slider_img-4.jpg" alt="img">
+					<p class="title">Vip</p>
+					<p>Цена: <span>от 180 руб.</span></p>
+					<a class="button" href="#">Заказать</a>
+				</div>
+
+				<div class="slider__item">
+					<img src="img/packages_slider_img-1.jpg" alt="img">
+					<p class="title">Econom</p>
+					<p>Цена: <span>от 180 руб.</span></p>
+					<a class="button" href="#">Заказать</a>
+				</div>
+
 			</div>
 		</div>
+	</div>
+</section>
+<!-- packages-section end-->
 
+<!-- services section -->
+<section class="services__section">
+	<div class="container">
+		<h2>Наши услуги</h2>
+		<div class="services__row">
+			<a href="#">
+				<img src="img/services_img-1.jpg" alt="Мягкий переплет">
+				<h3>Мягкий переплет</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-2.jpg" alt="Переплет на металлическую и пластиковую пружину">
+				<h3>Переплет на металлическую и пластиковую пружину</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-3.jpg" alt="Брошюровка документов">
+				<h3>Брошюровка документов</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-4.jpg" alt="Тиснение">
+				<h3>Тиснение</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-5.jpg" alt="Печать авторефератов">
+				<h3>Печать авторефератов</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-6.jpg" alt="Черно-белая печать">
+				<h3>Черно-белая печать</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-7.jpg" alt="Фото на документы">
+				<h3>Фото на документы</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-8.jpg" alt="Широкоформатная печать">
+				<h3>Широкоформатная печать</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-1.jpg" alt="Мягкий переплет">
+				<h3>Мягкий переплет</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-2.jpg" alt="Переплет на металлическую и пластиковую пружину">
+				<h3>Переплет на металлическую и пластиковую пружину</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-3.jpg" alt="Брошюровка документов">
+				<h3>Брошюровка документов</h3>
+			</a>
+			<a href="#">
+				<img src="img/services_img-4.jpg" alt="Тиснение">
+				<h3>Тиснение</h3>
+			</a>
+		</div>
+		<a class="full button" href="#">Все услуги</a>
 	</div>
 </section>
 
-<!-- section map end-->
+<!-- services section end-->
+
+<!-- map section -->
+<section class="map__section">
+	<div class="container">
+		<div class="map__block">
+			<div class="ui top attached tabular menu">
+
+				<a class="item active" data-tab="metromap">
+					<i class="fas fa-subway"></i>
+					На схеме метро
+				</a>
+			
+				<a class="item" data-tab="mosmap">
+					<i class="fas fa-map-marker-alt"></i>
+					На карте
+				</a>
+			
+			</div>
+			
+			<div class="ui bottom attached tab segment active" data-tab="metromap">
+				<div class="spare">
+					<div id="img_wrapp" class="ui-draggable">
+						<img class="img" src="img/metro_map.png" alt="">
+					</div>
+				</div>
+			</div>
+			
+			<div class="ui bottom attached tab segment" data-tab="mosmap">
+				<div id="map"></div>
+			</div>
+		</div>
+
+		<div class="block__links">
+			<ul class="links">
+				<li>
+					<i class="metro__icon i24 lineid-9"></i>
+					<a href="#">Салон у метро "Чеховская", "Пушкинская" и "Тверская"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-9"></i>
+					<a href="#">Салон у метро "Менделеевская"</a>
+				</li>
+				<li>
+					<i class="metro__icon i24 lineid-9"></i>
+					<a href="#">Салон у метро "Петровско-Разумовская"</a>
+				</li>
+				<li>
+					<i class="metro__icon i24 lineid-9"></i>
+					<a href="#">Салон у метро "Серпуховская"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-8"></i>
+					<a href="#">Салон у метро "Кузнецкий мост"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-8"></i>
+					<a href="#">Салон у метро "Выхино"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-7"></i>
+					<a href="#">Салон у метро "Рязанский проспект"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-7"></i>
+					<a href="#">Салон у метро "Таганская"</a>
+				</li>
+				<li>
+					<i class="metro__icon i24 lineid-7"></i>
+					<a href="#">Салон у метро "Авиамоторная"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-7"></i>
+					<a href="#">Салон у метро "Беляево"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-6"></i>
+					<a href="#">Салон у метро "Сухаревская"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-6"></i>
+					<a href="#">Салон у метро "Академическая"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-6"></i>
+					<a href="#">Салон у метро "Академическая" №1</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-6"></i>
+					<a href="#">Салон у метро "Академическая" №2</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-5"></i>
+					<a href="#">Салон у метро "Курская"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-5"></i>
+					<a href="#">"Проспект Мира" (кольцевая)</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-5"></i>
+					<a href="#">Салон у метро "Парк Культуры (кольцевая)"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-5"></i>
+					<a href="#">Салон у метро "Новослободская"</a>
+				</li>
+			</ul>
+
+			<ul class="links">
+				<li>
+					<i class="metro__icon i24 lineid-9"></i>
+					<a href="#">Салон у метро "Чеховская", "Пушкинская" и "Тверская"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-9"></i>
+					<a href="#">Салон у метро "Менделеевская"</a>
+				</li>
+				<li>
+					<i class="metro__icon i24 lineid-9"></i>
+					<a href="#">Салон у метро "Петровско-Разумовская"</a>
+				</li>
+				<li>
+					<i class="metro__icon i24 lineid-9"></i>
+					<a href="#">Салон у метро "Серпуховская"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-8"></i>
+					<a href="#">Салон у метро "Кузнецкий мост"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-8"></i>
+					<a href="#">Салон у метро "Выхино"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-7"></i>
+					<a href="#">Салон у метро "Рязанский проспект"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-7"></i>
+					<a href="#">Салон у метро "Таганская"</a>
+				</li>
+				<li>
+					<i class="metro__icon i24 lineid-7"></i>
+					<a href="#">Салон у метро "Авиамоторная"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-7"></i>
+					<a href="#">Салон у метро "Беляево"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-6"></i>
+					<a href="#">Салон у метро "Сухаревская"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-6"></i>
+					<a href="#">Салон у метро "Академическая"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-6"></i>
+					<a href="#">Салон у метро "Академическая" №1</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-6"></i>
+					<a href="#">Салон у метро "Академическая" №2</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-5"></i>
+					<a href="#">Салон у метро "Курская"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-5"></i>
+					<a href="#">"Проспект Мира" (кольцевая)</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-5"></i>
+					<a href="#">Салон у метро "Парк Культуры (кольцевая)"</a>
+				</li>
+				<li>
+					<i class="metro__icon lineid-5"></i>
+					<a href="#">Салон у метро "Новослободская"</a>
+				</li>
+			</ul>
+		</div>
+		<a class="button" href="#">Все салоны</a>
+	</div>
+</section>
+<!-- map section end-->
+
+<!-- reviews section -->
+<section class="reviews__section">
+	<div class="container">
+		<h2>Отзывы клиентов</h2>
+		<div class="reviews__row">
+
+			<div class="reviews__block">
+				<div class="reviews__wrapper">
+					<img src="img/reviews_foto.png" alt="foto">
+					<div class="reviews__info">
+						<p class="reviews__name">Алексей В.</p>
+						<p>10 марта 2020</p>
+					</div>
+				</div>
+				<div class="reviews__text">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</div>
+			</div>
+
+			<div class="reviews__block">
+				<div class="reviews__wrapper">
+					<img src="img/reviews_foto.png" alt="foto">
+					<div class="reviews__info">
+						<p class="reviews__name">Алексей В.</p>
+						<p>10 марта 2020</p>
+					</div>
+				</div>
+				<div class="reviews__text">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+				</div>
+			</div>
+
+		</div>
+		<a class="button" href="#">Оставить отзыв</a>
+	</div>
+</section>
+<!-- reviews section end-->
+
+<!-- footer section -->
+<footer class="footer">
+	<div class="yellow"></div>
+	<div class="red"></div>
+	<div class="blue"></div>
+	<div class="container">
+		<div class="footer__content">
+			<div class="footer__links">
+				<a href="#">Адреса копировальных центров</a>
+				<a href="#">Вакансии</a>
+				<a href="#">Контакты</a>
+				<a href="#">О компании</a>
+				<a href="#">Пользовательское соглашение</a>
+			</div>
+			<div class="footer__links">
+				<a href="#">Помощь</a>
+				<a href="#">Как сделать заказ</a>
+				<a href="#">Доставка</a>
+				<a href="#">Оплата</a>
+				<a href="#">Контакты</a>
+			</div>
+		</div>
+		<div class="footer__socials">
+			<div class="footer__iconWrapper">
+				<div class="footer__icon">
+					<a href="#"><img src="img/icon/facebook.svg" alt="facebook"></a>
+					<a href="#"><img src="img/icon/vk.svg" alt="facebook"></a>
+					<a href="#"><img src="img/icon/inst.svg" alt="facebook"></a>
+				</div>
+				<div class="footer__massengers">
+					<a href="#"><img src="img/icon/viber.png" alt="viber"></a>
+					<a href="#"><img src="img/icon/whatsapp.png" alt="viber"></a>
+					<a href="#"><img src="img/icon/tg.png" alt="viber"></a>
+				</div>
+			</div>
+			<p>© 1992 - 2019 "РЕГЛЕТ" г. Москва ООО «Реглет»</p>
+			<div class="adventor">
+				<img src="img/icon/develop.svg" alt="logo">
+				<p>Разработка сайта - <span>Адвентор Лаб</span></p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer section end-->
 
 
+	
+</body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 <script src="js/slick.min.js"></script>
 
 <script src="js/script.js"></script>
 
-</body>
+<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
