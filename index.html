@@ -3,13 +3,12 @@
 <head>
 	<title>Главная</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style-desktop.css">
-	<link rel="shortcut icon" href="favicon.ico">
-	<meta name="robots" content="noindex, nofollow">
+	<link rel="stylesheet" href="css/style-tablet.css">
+	<link rel="stylesheet" href="css/style-tablet-small.css">
+	<link rel="stylesheet" href="css/style-mobile.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="fonts/fonts-style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" 
 	integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
@@ -20,7 +19,7 @@
 <body>
 
 <!-- header section -->
-	<section class="header__section">
+	<section class="header__section lock-padding">
 		<div class="yellow"></div>
 		<div class="red"></div>
 		<div class="blue"></div>
@@ -29,6 +28,12 @@
 				<div class="container">
 
 					<div class="header__top">
+
+						<div class="header__burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 
 						<div class="header__sity">
 							<a href="#">Москва</a>
@@ -59,7 +64,7 @@
 
 				<div class="logo__content">
 					<p class="logo__year">C 1992 года</p>
-					<a href="#"><img src="img/logo_reglet.png" alt="logo"></a>
+					<a class="logo" href="#"><img src="img/logo_reglet.png" alt="logo"></a>
 					<p class="logo__text">Сеть копировальных центров</p>
 				</div>
 
@@ -83,15 +88,16 @@
 							<a class="tg" href="#"></a>
 						</div>
 
-						<a href="#">Заказать звонок</a>
+						<a href="#popup" class="popup-link">Заказать звонок</a>
 
 					</div>
 
 				</div>
 
 				<div class="user">
-					<a class="user__come" href="#">Войти</a>
-					<a class="user__basket" href="#"> <span>3</span> Корзина</a>
+					<a class="user__search" href="#"></a>
+					<a class="user__come" href="#"><p>Войти</p></a>
+					<a class="user__basket" href="#"> <span>3</span><p>Корзина</p></a>
 				</div>
 
 			</div>
@@ -100,11 +106,13 @@
 		<div class="header__menu">
 			<div class="container">
 				<div class="header__item">
-					<div class="item__icon">
+
+					<div class="header__burger">
 						<span></span>
 						<span></span>
 						<span></span>
 					</div>
+
 					<div class="item__menu">
 						<a href="#">Все разделы</a>
 						<a href="#">Онлайн - заказ</a>
@@ -118,6 +126,93 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="container">
+			<div class="mobile__menu">
+				<div class="menu__top">
+					<a href="#" class="button">Онлайн-заказ</a>
+					<ul class="item__top">
+						<li><a class="item__link" href="#">Переплет дипломов</a></li>
+						<li><a class="item__link" href="#">Переплет</a></li>
+						<li><a class="item__link" href="#">Печать</a></li>
+						<li><a class="item__link" href="#">Продукция</a></li>
+						<li><a class="item__link" href="#">Цены</a></li>
+						<li><a class="item__link" href="#">Конакты</a></li>
+					</ul>
+				</div>
+				<div class="menu__bottom">
+					<ul class="item__bottom">
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Возврат</a></li>
+						<li><a href="#">Услуги и сервис</a></li>
+					</ul>
+					<div class="contacts">
+						<div class="contacts__tel">
+							<a href="tel:8(495) 979-96-99">8(495) 979-96-99</a>
+							<a href="tel:8(495) 979-96-99">8(495) 979-96-99</a>
+						</div>
+
+						<div class="contacts__socials">
+
+							<div class="socials">
+								<a class="viber" href="#"></a>
+								<a class="whatsapp" href="#"></a>
+								<a class="tg" href="#"></a>
+							</div>
+
+							<a href="#popup" class="popup-link">Заказать звонок</a>
+						</div>
+					</div>
+
+					<div class="delivery">
+						<div class="delivery__text-1">Доставка по всей России</div>
+						<div class="delivery__text-2">Печать за 1 час <span>24/7</span></div>
+					</div>
+
+				</div>
+
+				<ul class="sub__menu">
+					<li><a class="exit item__link" href="#">Назад</a></li>
+					<li><a href="#">Печать авторефератов</a></li>
+					<li><a href="#">Черно-белая печать</a></li>
+					<li><a href="#">Цветная печать</a></li>
+					<li><a href="#">Сканирование</a></li>
+					<li><a href="#">Печать визиток</a></li>
+					<li><a href="#">Печать приглашений</a></li>
+					<li><a href="#">Печать фотографий</a></li>
+					<li><a href="#">Ламинирование</a></li>
+					<li><a href="#">Фото на документы</a></li>
+					<li><a href="#">Копирование</a></li>
+					<li><a href="#">Услуги корректора</a></li>
+					<li><a href="#">Гарри Поттер</a></li>
+					<li><a href="#">Широкоформатная печать</a></li>
+					<li><a href="#">Наружная и интерьерная печать</a></li>
+				</ul>
+			</div>
+
+			<!-- popup -->
+			<div id="popup" class="popup">
+				<div class="popup__body">
+					<div class="popup__content">
+						<a class="popup__close close-popup" href="#"></a>
+						<div class="popup__title">
+							<p>Заказать звонок</p>
+						</div>
+						<form action="#">
+							<label for="username">Имя<span>*</span></label>
+							<input name="username" id="username" type="text">
+							<label for="tel">Ваш телефон<span>*</span></label>
+							<input name="tel" id="tel" type="tel">
+							<button type="submit" class="button">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- popup end -->
+
+		</div>
+
 	</section>
 <!-- header section end-->
 
@@ -125,6 +220,7 @@
 	<section class="foto__books">
 		<div class="container">
 			<div class="foto__books-block">
+				<h2>Фотокниги<br> <span>Premium</span></h2>
 
 				<div class="foto__books-slider">
 					<div class="slider__item">
@@ -236,15 +332,15 @@
 		<div class="services__row">
 			<a href="#">
 				<img src="img/services_img-1.jpg" alt="Мягкий переплет">
-				<h3>Мягкий переплет</h3>
+				<h3>Мягкий<br> переплет</h3>
 			</a>
 			<a href="#">
 				<img src="img/services_img-2.jpg" alt="Переплет на металлическую и пластиковую пружину">
-				<h3>Переплет на металлическую и пластиковую пружину</h3>
+				<h3>Переплет<br> на металлическую и<br> пластиковую пружину</h3>
 			</a>
 			<a href="#">
 				<img src="img/services_img-3.jpg" alt="Брошюровка документов">
-				<h3>Брошюровка документов</h3>
+				<h3>Брошюровка<br> документов</h3>
 			</a>
 			<a href="#">
 				<img src="img/services_img-4.jpg" alt="Тиснение">
@@ -252,7 +348,7 @@
 			</a>
 			<a href="#">
 				<img src="img/services_img-5.jpg" alt="Печать авторефератов">
-				<h3>Печать авторефератов</h3>
+				<h3>Печать<br> авторефератов</h3>
 			</a>
 			<a href="#">
 				<img src="img/services_img-6.jpg" alt="Черно-белая печать">
@@ -264,7 +360,7 @@
 			</a>
 			<a href="#">
 				<img src="img/services_img-8.jpg" alt="Широкоформатная печать">
-				<h3>Широкоформатная печать</h3>
+				<h3>Широкоформатная<br> печать</h3>
 			</a>
 			<a href="#">
 				<img src="img/services_img-1.jpg" alt="Мягкий переплет">
@@ -272,18 +368,18 @@
 			</a>
 			<a href="#">
 				<img src="img/services_img-2.jpg" alt="Переплет на металлическую и пластиковую пружину">
-				<h3>Переплет на металлическую и пластиковую пружину</h3>
+				<h3>Переплет<br> на металлическую и<br> пластиковую пружину</h3>
 			</a>
 			<a href="#">
 				<img src="img/services_img-3.jpg" alt="Брошюровка документов">
-				<h3>Брошюровка документов</h3>
+				<h3>Брошюровка<br> документов</h3>
 			</a>
 			<a href="#">
 				<img src="img/services_img-4.jpg" alt="Тиснение">
 				<h3>Тиснение</h3>
 			</a>
 		</div>
-		<a class="full button" href="#">Все услуги</a>
+		<a class="full button" href="javascript:void(0)">Все услуги</a>
 	</div>
 </section>
 
@@ -292,6 +388,7 @@
 <!-- map section -->
 <section class="map__section">
 	<div class="container">
+		<h2>Сеть копировальных центров Реглет в Москве</h2>
 		<div class="map__block">
 			<div class="ui top attached tabular menu">
 
@@ -471,7 +568,7 @@
 				</li>
 			</ul>
 		</div>
-		<a class="button" href="#">Все салоны</a>
+		<a class="full__salon button" href="#">Все салоны</a>
 	</div>
 </section>
 <!-- map section end-->
@@ -559,13 +656,16 @@
 </footer>
 <!-- footer section end-->
 
-
-	
-</body>
+<script src="js/popups.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
 <script src="js/slick.min.js"></script>
-
 <script src="js/script.js"></script>
-
 <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#tel').mask('+7(999) 999-9999');
+	});
+</script>
+</body>
+

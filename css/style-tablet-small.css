@@ -1,7 +1,297 @@
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1060px) {
 
 	.container {
 		width: 740px;
 	}
+
+	/* mobile menu */
+
+.mobile__menu {
+	display: block;
+	width: 308px; 
+	position: absolute;
+	top: -134%;
+	z-index: 2;
+	transition: .3s;
+}
+
+.mobile__menu.active {
+	top: 82px;
+}
+
+.mobile__menu .menu__top {
+	background: #fff;
+	padding: 30px 35px 20px 30px;
+}
+
+.mobile__menu .button {
+	color: #2b2f35;
+	font-size: 13px;
+	font-family: 'Roboto-Bold';
+	line-height: 36px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.mobile__menu .item__top a {
+	color: #2b2f35;
+	font-family: 'Roboto-Bold';
+	font-size: 13px;
+	line-height: 42px;
+	text-transform: uppercase;
+	transition: .3s;
+	position: relative;
+}
+
+.mobile__menu .item__top li {
+	border-bottom: 1px solid #b9b9b9;
+}
+
+.mobile__menu .item__top li:last-child {
+	border-bottom: none;
+}
+
+.mobile__menu .item__top li a:after {
+	content: '';
+	background: url(../img/icon/mob_arrow.svg) no-repeat;
+	width: 7px;
+	height: 10px;
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+
+.mobile__menu .menu__bottom {
+	background-color: #29364d;
+	padding: 35px 33px 70px 30px;
+}
+
+.mobile__menu .item__bottom {
+	border-bottom: 1px solid #3d495e;
+	padding-bottom: 15px;
+}
+
+.menu__bottom .item__bottom li a {
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.menu__bottom .item__bottom:after {
+	content: '';
+	width: 241px;
+	height: 1px;
+	background-color: #f3f4f5;
+	opacity: 0.1;
+}
+
+.menu__bottom .contacts {
+	display: block;
+}
+
+.menu__bottom .contacts .socials {
+	display: block;
+}
+
+.menu__bottom .contacts .contacts__tel {
+	position: relative;
+	padding: 20px 0 0 38px;
+}
+
+.menu__bottom .contacts__tel:after {
+	left: 0 !important;
+}
+
+.menu__bottom .contacts__socials>a {
+	width: 50%;
+}
+
+
+.menu__bottom .contacts__socials {
+	padding-left: 38px;
+}
+
+.menu__bottom .contacts__socials a {
+	margin-right: 15px;
+}
+
+.menu__bottom .contacts__socials a:last-child {
+	margin: 0;
+}
+
+.menu__bottom .delivery {
+	padding-left: 38px;
+}
+
+.menu__bottom .delivery:after {
+	left: -10px;
+}
+
+/* mobile menu end*/
+
+/* sub menu */
+
+.sub__menu {
+	display: none;
+	width: 308px;
+	background: #fff;
+	position: absolute;
+	top: 96px;
+	z-index: 5;
+	transition: .3s;
+	padding-bottom: 123px;
+}
+
+.sub__menu.active {
+	display: block;
+}
+
+.sub__menu li a {
+	color: #2b2f35;
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	line-height: 36px;
+	transition: .3s;
+	padding-left: 30px;
+}
+
+.sub__menu .exit {
+	background: url(../img/icon/sub_menu-arrow.svg)30px 50% no-repeat;
+	background-color: #f3f4f5;
+	color: #8f9195;
+	padding-left: 50px;
+}
+
+/* sub menu end*/
+
+.header__item .header__burger {
+	display: none;
+}
+
+.header__top .header__burger {
+	display: block;
+}
+
+.header__top .header__burger span {
+	background: #fff;
+	border-radius: 5px;
+}
+
+.header__sity {
+	display: none;
+}
+
+.header__top nav {
+	display: none;
+}
+
+.delivery {
+	display: none;
+}
+
+.contacts {
+	display: none;
+}
+
+.header__menu {
+	display: none;
+}
+
+.foto__books {
+	padding: 0;
+}
+
+.header__content {
+	height: 110px;
+}
+
+header {
+	height: 70px;
+}
+
+.header__top {
+	padding-top: 15px;
+}
+
+.foto__books-block h2 {
+	bottom: 310px;
+}
+
+.foto__books-slider {
+	width: 100%;
+	height: 400px;
+}
+
+.foto__books-banner {
+	margin-left: unset;
+	width: auto;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+
+.banner-2 {
+	margin: 0;
+}
+
+.packages__slider .slider__item img {
+	width: unset;
+}
+
+.packages__slider .slick-list.draggable {
+	width: 214px;
+}
+
+.packages__banner {
+	margin-right: 50px;
+}
+
+.packages__slider .slick-prev {
+	left: 56%;
+	bottom: 42%;
+}
+
+.packages__slider .slick-next {
+	right: 33px;
+	top: 42%;
+}
+
+.services__row a {
+	width: calc((100% - 56px)/3);
+}
+
+.block__links {
+	flex-direction: column;
+	align-items: center;
+}
+
+.block__links ul:last-child {
+	padding-top: 0;
+}
+
+.map__section .button {
+	margin: 30px auto 0;
+}
+
+.footer__links:first-child {
+	padding-right: 50px;
+}
+
+.reviews__section h2 {
+	padding: 20px 0 30px;
+}
+
+.reviews__block {
+	width: 100%;
+	background: #fff url(../img/icon/quotes.svg) 652px 20px no-repeat;
+}
+
+.footer .container {	
+	padding: 40px 0 40px;
+}
+
+.footer__content {
+	padding-bottom: 30px;
+}
 
 }

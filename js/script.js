@@ -7,21 +7,61 @@ $('.foto__books-slider').slick({
 	speed: 1000,
 	slidesToShow: 1,
 	slidesToScroll: 1,
+	// responsive: [
+	// 	{
+	// 	breakpoint: 1024,
+	// 	settings: {
+	// 		slidesToShow: 3,
+	// 		slidesToScroll: 3,
+	// 		infinite: true,
+	// 		dots: true
+	// 	}
+	// 	},
+	// 	{
+	// 	breakpoint: 600,
+	// 	settings: {
+	// 		slidesToShow: 2,
+	// 		slidesToScroll: 2
+	// 	}
+	// 	},
+	// 	{
+	// 	breakpoint: 480,
+	// 	settings: {
+	// 		slidesToShow: 1,
+	// 		slidesToScroll: 1
+	// 	}
+	// 	}
+	//   // You can unslick at a given breakpoint now by adding:
+	//   // settings: "unslick"
+	//   // instead of a settings object
+	// ]
+});
+
+$('.packages__slider').slick({
+	arrows: true,
+	dots: false,
+	autoplay: false,
+	autoplaySpeed: false,
+	speed: 1000,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	infinite: true,
+	adaptiveHeight: true,
 	responsive: [
 		{
-		breakpoint: 1024,
+		breakpoint: 1261,
 		settings: {
 			slidesToShow: 3,
-			slidesToScroll: 3,
+			slidesToScroll: 1,
 			infinite: true,
-			dots: true
+			dots: false
 		}
 		},
 		{
-		breakpoint: 600,
+		breakpoint: 1061,
 		settings: {
-			slidesToShow: 2,
-			slidesToScroll: 2
+			slidesToShow: 1,
+			slidesToScroll: 1
 		}
 		},
 		{
@@ -37,43 +77,13 @@ $('.foto__books-slider').slick({
 	]
 });
 
-$('.packages__slider').slick({
-	arrows: true,
-	dots: false,
-	autoplay: false,
-	autoplaySpeed: false,
-	speed: 1000,
-	slidesToShow: 4,
-	slidesToScroll: 1,
-	infinite: true,
-	responsive: [
-		{
-		breakpoint: 1024,
-		settings: {
-			slidesToShow: 3,
-			slidesToScroll: 3,
-			infinite: true,
-			dots: true
-		}
-		},
-		{
-		breakpoint: 600,
-		settings: {
-			slidesToShow: 2,
-			slidesToScroll: 2
-		}
-		},
-		{
-		breakpoint: 480,
-		settings: {
-			slidesToShow: 1,
-			slidesToScroll: 1
-		}
-		}
-	  // You can unslick at a given breakpoint now by adding:
-	  // settings: "unslick"
-	  // instead of a settings object
-	]
+$(document).ready(function() {
+	$('.header__top .header__burger').click(function(event) {
+		$('.header__top .header__burger,.mobile__menu').toggleClass('active');
+	});
+	$('.item__link').click(function(event) {
+		$('.sub__menu').toggleClass('active');
+	});
 });
 
 
@@ -113,6 +123,41 @@ $(function() {
 	
 });
 
+$(function() {
+	var showFirst = 0,
+			  text = ["Все салоны", "Скрыть"];
+	var blocks = $('.block__links ul');
+	blocks.each(function(index, block){
+		 if(index > (showFirst - 2))
+			  $(this).hide();
+	});
+	$('.full__salon').text(text[0]);
+	$('.full__salon').click(function(e){
+		 e.preventDefault();
+		 blocks.each(function(index, block){
+			  if(index > (showFirst - 1))
+					$(this).slideToggle( "fast" );
+		 });
+		 switch($('.full__salon').text()){
+			  case text[0]:
+					$('.full__salon').text(text[1]);
+					break;
+			  case text[1]:
+					$('.full__salon').text(text[0]);
+					break;
+			  default:
+					$('.full__salon').text(text[0]);
+					break;
+		 }
+	});
+	
+	$('div.officescount').css('cursor', 'pointer');
+	$('div.officescount').click(function(e){
+		 $(this).children('a')[0].click();
+	});
+	
+});
+
 ymaps.ready(function () {
 	var myMap = new ymaps.Map('map', {
 					center: [55.757571738930814,37.634944492729176], 
@@ -128,6 +173,7 @@ ymaps.ready(function () {
 		})
 
 });
+
 
 $(document).ready(function () {
 	$("#img_wrapp").draggable();

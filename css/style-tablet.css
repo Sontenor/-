@@ -1,3 +1,70 @@
+@media screen and (max-width: 1320px) {
+
+	.container {
+		width: 1200px;
+	}
+
+	.header__menu .item__menu a {
+		padding-right: 66px;
+	}
+
+	.foto__books-slider {
+		width: 883px;
+	}
+
+	.packages__slider .slider__item {
+		height: 343px;
+	}
+
+	.services__row img {
+		width: 100%;
+	}
+
+	.reviews__block {
+		width: 590px;
+	}
+
+	.packages__slider .slick-prev {
+		left: 32%;
+		bottom: 45%;
+	}
+
+}
+
+@media screen and (max-width: 1260px) {
+
+	.container {
+		width: 1100px;
+	}
+
+	.header__sity {
+		margin-right: 70px;
+	}
+
+	.header__menu .item__menu a {
+		padding-right: 51px;
+	}
+
+	.header__menu .item__menu a:after {
+		right: 23px;
+	}
+
+	.foto__books-slider {
+		width: 783px;
+	}
+
+	.packages__slider .slick-prev {
+		left: 34%;
+	}
+
+
+	.reviews__block {
+		width: 531px;
+		padding: 20px 30px 40px 40px;
+		background:#fff url(../img/icon/quotes.svg) 466px 20px no-repeat;
+	}
+
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -5,5 +72,105 @@
 		margin: 0 auto;
 		width: 1000px;
 	}
+
+	.header__sity {
+		margin-right: 80px;
+	}
+
+	.header__top input {
+		width: 250px;
+	}
+
+	.logo__content {
+		margin-right: 35px;
+	}
+
+	.delivery:after {
+		left: -41px;
+	}
+
+	.header__content .contacts__tel {
+		padding-right: 30px;
+	}
+
+	.header__content .contacts__tel:before {
+		left: 169px;
+	}
+
+	.user .user__come {
+		padding-right: 30px;
+	}
+
+	.user:after {
+		left: 52px;
+	}
+
+	.header__content .contacts__tel:after {
+		left: -28px;
+	}
+
+	.header__menu .item__menu a {
+		padding-right: 37px;
+	}
+
+	.header__menu .item__menu a:after {
+		right: 17px;
+	}
+
+	.foto__books-slider {
+		width: 683px;
+	}
+
+	.packages__slider .slick-prev {
+		left: 38%;
+	}
+
+	.services__row a {
+		height: 296px;
+	}
+
+	.map__section h2 {
+		padding: 35px 0 40px;
+	}
+
+	.reviews__row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.reviews__block {
+		margin-bottom: 30px;
+	}
+
+	.reviews__row:last-child {
+		margin: 0;
+	}
+
+	.ui.bottom.attached.tab.segment {
+		height: 700px;
+	}
+
+	#img_wrapp {
+		left: -131px;
+		top: -157px;
+	}
+
+	.block__links {
+		padding: 0px;
+	}
+
+	.block__links ul {
+		padding-top:30px;
+	}
+
+	.reviews__section .button {
+		margin: 0 auto;
+	}
+
+	.reviews__section h2 {
+		padding: 40px 0 50px;
+	}
+
+
 
 }
