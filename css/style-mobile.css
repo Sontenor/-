@@ -48,6 +48,11 @@
 		height: 80px;
 	}
 
+	header .header__top .header__burger {
+		width: 20px;
+		height: 22px;
+	}
+
 	.user {
 		align-items: center;
 		padding-right: 15px;

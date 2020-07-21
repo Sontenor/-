@@ -1,3 +1,16 @@
+@media screen and (max-width: 1720px) {
+
+	.menu__block .sub__menu {
+		width: auto;
+		right: 0;
+	}
+
+	.sub__menu-block {
+		width: 345px;
+	}
+}
+
+
 @media screen and (max-width: 1320px) {
 
 	.container {
@@ -5,7 +18,7 @@
 	}
 
 	.header__menu .item__menu a {
-		padding-right: 66px;
+		padding-right: 30px;
 	}
 
 	.foto__books-slider {
@@ -29,6 +42,10 @@
 		bottom: 45%;
 	}
 
+	.sub__menu-block {
+		width: 328px;
+	}
+
 }
 
 @media screen and (max-width: 1260px) {
@@ -42,10 +59,10 @@
 	}
 
 	.header__menu .item__menu a {
-		padding-right: 51px;
+		padding: 0 25px;
 	}
 
-	.header__menu .item__menu a:after {
+	.header__menu .item__menu>li:after {
 		right: 23px;
 	}
 
@@ -62,6 +79,23 @@
 		width: 531px;
 		padding: 20px 30px 40px 40px;
 		background:#fff url(../img/icon/quotes.svg) 466px 20px no-repeat;
+	}
+
+	.sub__menu-block {
+		padding: 45px 0 0 25px;
+	}
+
+	.sub__menu .sub__menu-block:nth-child(2) {
+		padding: 37px 0 0 16px;
+	}
+
+	.sub__menu .sub__menu-block:nth-child(3) {
+		padding: 45px 0 0 10px;
+		width: 266px;
+	}
+
+	.sub__menu-block {
+		width: 315px;
 	}
 
 }
@@ -109,11 +143,19 @@
 		left: -28px;
 	}
 
-	.header__menu .item__menu a {
-		padding-right: 37px;
+	.header__menu .item__menu>li:first-child a {
+		padding: 0 20px;
 	}
 
-	.header__menu .item__menu a:after {
+	.header__menu .item__menu>li:last-child a {
+		padding: 0 0 0 20px;
+	}
+
+	.header__menu .item__menu a {
+		padding: 0 20px;
+	}
+
+	.header__menu .item__menu>li:after {
 		right: 17px;
 	}
 
@@ -169,6 +211,14 @@
 
 	.reviews__section h2 {
 		padding: 40px 0 50px;
+	}
+
+	.menu__item .menu__block .button {
+		width: 147px;
+	}
+
+	.sub__menu-block {
+		width: 275px;
 	}
 
 
